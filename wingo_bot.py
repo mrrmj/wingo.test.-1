@@ -3,7 +3,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 import requests, time, numpy as np
 from sklearn.ensemble import RandomForestClassifier
 
-BOT_TOKEN = "8009302791:AAG57d9fiqM6alSfiaPsooI8_Jx4Q4ukw2A"
+BOT_TOKEN = "8397157307:AAEswhlHJelvZ0kHv0cRlIWvJ7awbdRw3IM"
 history = []
 last_prediction = None
 
@@ -150,3 +150,4 @@ app = ApplicationBuilder().token(BOT_TOKEN).build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CommandHandler("predict", predict))
 app.run_polling()
+
